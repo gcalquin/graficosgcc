@@ -1,0 +1,34 @@
+<h1 align=center>Estadisticas</h1>
+
+
+<h2>Ventas</h2>
+<p>Ventas Mensuales últimos 12 meses</p>
+<%= column_chart @sales_all %>
+<p>Cantidad de Ventas Mensuales últimos 12 meses</p>
+<%= column_chart @sales_amount_month %>
+<p>Promedio de Ventas mensuales de los últimos 12 meses</p>
+<%= column_chart @sales_average %>
+
+<hr>
+
+<h2>Ventas por origen</h2>
+<p>últimos 12 meses</p>
+<%= pie_chart @sales_amount12 %>
+<p>últimos 6 meses</p>
+<%= pie_chart @sales_amount6 %>
+<p>últimos 3 meses</p>
+<%= pie_chart @sales_amount3 %>
+<p>último mes</p>
+<%= pie_chart @sales_amount1 %>
+
+
+<h2>Ventas por Tipo de Mezcla</h2>
+<p>últimos 12 meses</p>
+<%= pie_chart  @pie_month12 %>
+<p>últimos 6 meses</p>
+<%= pie_chart @pie_month6 %>
+<p>últimos 3 meses</p>
+<%= pie_chart @pie_month3 %>
+<p>último mes</p>
+<%= pie_chart @pie_month1 %>
+
